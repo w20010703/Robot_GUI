@@ -40,7 +40,7 @@ class PageHandler:
 		# load all pages
 		# ===========================================================
 		self.page_main = PAGE_MAIN()
-		self.page_manual = PAGE_MANUAL()
+		# self.page_manual = PAGE_MANUAL()
 		
 
 		self.last_page = self.page_main
@@ -54,11 +54,11 @@ class PageHandler:
 
 		# connect the switching and data transforming between pages
 		# ===========================================================
-		self.page_main.manual_btn.clicked.connect(self.general_switch_page(self.page_main, self.page_manual, action_before=[self.page_manual.reset_data], action_after=[]))
-		self.page_manual.auto_btn.clicked.connect(self.general_switch_page(self.page_manual, self.page_main, action_before=[self.page_main.reset_data], action_after=[]))
+		# self.page_main.manual_btn.clicked.connect(self.general_switch_page(self.page_main, self.page_manual, action_before=[self.page_manual.reset_data], action_after=[]))
+		# self.page_manual.auto_btn.clicked.connect(self.general_switch_page(self.page_manual, self.page_main, action_before=[self.page_main.reset_data], action_after=[]))
 		
-		self.page_main.quit_btn.clicked.connect(self.quit_system)
-		self.page_manual.quit_btn.clicked.connect(self.quit_system)
+		# self.page_main.quit_btn.clicked.connect(self.quit_system)
+		# self.page_manual.quit_btn.clicked.connect(self.quit_system)
 		# ===========================================================
 		# ===========================================================
 

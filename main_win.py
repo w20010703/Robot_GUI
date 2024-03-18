@@ -57,3 +57,5 @@ class MAIN_WIN(QMainWindow):
 
         write_log("end")
         return sys.exit()
+
+        
